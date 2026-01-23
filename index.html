@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shinsei Technology — Modern ML & AI products</title>
+  <link rel="icon" type="image/png" href="/resources/images/shinsei_favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/resources/images/shinsei_logo2.png" alt="Shinsei Technology logo" class="logo">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#vision">Vision</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Shinsei Technology</h1>
+          <p class="lead">Build smarter products with fast, reliable AI infrastructure — designed for teams who ship.</p>
+          <p class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Get started</a>
+            <a class="btn btn-outline" href="#features">Learn more</a>
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="/resources/images/shinsei_logo3.png" alt="Shinsei illustration" />
+        </div>
+      </div>
+    </section>
+
+    <section id="vision" class="vision">
+      <div class="container">
+        <h2>Our Vision</h2>
+        <p class="lead">At Shinsei Technology, we envision a future where AI empowers every business to innovate faster, scale smarter, and deliver exceptional experiences. We're building the infrastructure that makes advanced AI accessible, reliable, and secure for teams of all sizes.</p>
+        <div class="vision-grid">
+          <article>
+            <h3>Innovation</h3>
+            <p>Driving the next wave of technological breakthroughs through cutting-edge AI solutions.</p>
+          </article>
+          <article>
+            <h3>Accessibility</h3>
+            <p>Making powerful AI tools available to developers and businesses worldwide.</p>
+          </article>
+          <article>
+            <h3>Sustainability</h3>
+            <p>Developing AI that is efficient, ethical, and environmentally conscious.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <div class="container">
+        <h2>Meet Our Team</h2>
+        <p class="muted">A diverse group of experts passionate about AI and technology.</p>
+        <div class="team-members">
+          <div class="member">
+            <img src="/resources/images/shinsei_logo.svg" alt="Team member" class="member-photo">
+            <h4>Jane Doe</h4>
+            <p>CEO & Founder</p>
+          </div>
+          <div class="member">
+            <img src="/resources/images/shinsei_logo.svg" alt="Team member" class="member-photo">
+            <h4>John Smith</h4>
+            <p>CTO</p>
+          </div>
+          <div class="member">
+            <img src="/resources/images/shinsei_logo.svg" alt="Team member" class="member-photo">
+            <h4>Alice Johnson</h4>
+            <p>Lead Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Scalable Architecture</h3>
+            <p>Infrastructure that grows with your users — reliable, secure, and performant.</p>
+          </article>
+          <article class="card">
+            <h3>Developer Friendly</h3>
+            <p>Well-documented APIs, SDKs, and examples to get your team shipping quickly.</p>
+          </article>
+          <article class="card">
+            <h3>Enterprise Ready</h3>
+            <p>Compliance, monitoring, and support to meet production requirements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="cta">
+      <div class="container">
+        <h2>Flexible pricing</h2>
+        <p class="muted">From small pilots to large-scale deployments — choose the plan that fits.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#contact">Talk to sales</a>
+          <a class="btn btn-ghost" href="#">See docs</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact us</h2>
+        <p class="muted">Tell us about your project and we'll help you get started.</p>
+        <form class="contact-form" action="#" onsubmit="alert('Thanks — replace with real form handler'); return false;">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <p>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="/resources/images/shinsei_logo.svg" alt="Shinsei mark" class="logo-small">
+        <small>© <span id="year"></span> Shinsei Technology</small>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
