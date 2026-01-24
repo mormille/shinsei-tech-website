@@ -3,54 +3,79 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shinsei Technology — Modern ML & AI products</title>
-  <link rel="icon" type="image/png" href="/resources/images/shinsei_favicon.png" />
+  <title>Shinsei Technology — AI-Powered Drone Monitoring for Agriculture</title>
+  <meta name="description" content="Shinsei Technology automates end-to-end crop monitoring for precision agriculture with AI-powered drones and edge computing." />
+
+  <!-- Use RELATIVE paths (no leading /) for GitHub Pages compatibility -->
+  <link rel="icon" type="image/png" href="resources/images/shinsei_favicon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css">
+
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+
+<body id="top">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/">
-        <img src="/resources/images/shinsei_logo2.png" alt="Shinsei Technology logo" class="logo">
+      <a class="brand" href="#top" aria-label="Shinsei Technology home">
+        <img src="resources/images/shinsei_logo2.png" alt="Shinsei Technology logo" class="logo">
       </a>
-      <nav class="nav" id="nav">
+
+      <nav class="nav" id="nav" aria-label="Primary navigation">
         <a href="#vision">Vision</a>
         <a href="#team">Team</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
       </nav>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="nav" aria-expanded="false">
+        ☰
+      </button>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container hero-inner">
+
+        <!-- LOGO FIRST (LEFT, NARROW) -->
+        <div class="hero-media">
+          <img src="resources/images/shinsei_logo3.png" alt="Shinsei illustration" />
+        </div>
+
+        <!-- TEXT SECOND (RIGHT, WIDE) -->
         <div class="hero-copy">
           <h1>Shinsei Technology</h1>
-          <p class="lead">Automating the entire journey of crop monitoring for precision agriculture<br> with AI-powered drones.</p>
+          <p class="lead">
+            Automating end-to-end crop monitoring for precision agriculture<br>
+            with AI-powered drones.
+          </p>
         </div>
-        <div class="hero-media">
-          <img src="/resources/images/shinsei_logo3.png" alt="Shinsei illustration" />
-        </div>
+
       </div>
     </section>
 
     <section id="vision" class="vision">
       <div class="container">
         <h2>Our Vision</h2>
-        <p class="lead">At Shinsei Technology, we envision a future where farmers can produce more with fewer resources. By combining autonomous drones and artificial intelligence, we aim to reduce production costs, increase productivity, and enable smarter, data-driven decisions across large-scale agriculture.</p>
+        <p class="lead">
+          At Shinsei Technology, we envision a future where farmers can produce more with fewer resources.
+          By combining autonomous drones and artificial intelligence, we aim to reduce production costs,
+          increase productivity, and enable smarter, data-driven decisions across large-scale agriculture.
+        </p>
+
         <div class="vision-grid">
           <article>
             <h3>Innovation</h3>
             <p>Driving the next wave of agricultural innovation through autonomous drones, edge computing, and artificial intelligence.</p>
           </article>
+
           <article>
             <h3>Autonomy</h3>
-            <p>Fully autonomous flights and real-time AI-driven analysis that reduce human intervention, lowering operational costs, and enabling consistent monitoring across large agricultural areas.</p>
+            <p>Fully autonomous flights and real-time AI-driven analysis that reduce human intervention, lower operational costs, and enable consistent monitoring across large agricultural areas.</p>
           </article>
+
           <article>
             <h3>Sustainability</h3>
             <p>Reducing unnecessary inputs and improving resource efficiency helps farmers lower costs while minimizing environmental impact.</p>
@@ -61,9 +86,13 @@
 
     <section id="team" class="team">
       <div class="container">
-        <h2>Meet Our Team</h2>
-        <p class="muted">Our team is composed of professionals passionate about agriculture, AI, and technology, led by seasoned experts with extensive international experience across Japan, the UK, Brazil, Ghana, and Ethiopia.</p>
+        <h2>Our Team</h2>
+        <p class="muted">
+          Our team is composed of professionals passionate about agriculture, AI, and technology, led by seasoned experts with extensive international experience across Japan, the UK, Brazil, Ghana, and Ethiopia.
+        </p>
+
         <div class="team-members">
+          <!-- Populate members via JS or add member cards here -->
         </div>
       </div>
     </section>
@@ -71,20 +100,24 @@
     <section id="contact" class="contact">
       <div class="container">
         <h2>Contact us</h2>
-        <p class="muted">Tell us about your project and we'll help you get started.</p>
+        <p class="muted">Tell us about your project and we&apos;ll help you get started.</p>
+
         <form class="contact-form" action="mailto:luiz.mormille@shinseitech.com" method="post" enctype="text/plain">
           <label>
             Name
             <input type="text" name="name" required>
           </label>
+
           <label>
             Email
             <input type="email" name="email" required>
           </label>
+
           <label>
             Message
             <textarea name="message" rows="5" required></textarea>
           </label>
+
           <p>
             <button class="btn btn-primary" type="submit">Send message</button>
           </p>
@@ -96,17 +129,15 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <img src="/resources/images/shinsei_logo.svg" alt="Shinsei mark" class="logo-small">
+        <img src="resources/images/shinsei_logo.svg" alt="Shinsei mark" class="logo-small">
         <small>© <span id="year"></span> Shinsei Technology</small>
       </div>
-      <nav class="footer-nav">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-      </nav>
     </div>
   </footer>
 
-  <script src="/assets/main.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
