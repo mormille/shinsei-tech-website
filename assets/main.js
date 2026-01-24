@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
       nav.style.display = 'flex';
       nav.style.flexDirection = 'column';
       nav.style.gap = '12px';
-      nav.style.alignItems = 'flex-end';
+      nav.style.alignItems = 'center';
     }
   });
 });
