@@ -15,14 +15,13 @@
 /* =========================
    Base
    ========================= */
-*{ box-sizing:border-box; }
+*{ box-sizing:border-box; font-family: Raleway, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 html, body{
   overflow-x:hidden;
 }
 
 body{
-  font-family: Raleway, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight:400;
   font-size:18px;            /* ⬆️ base size (was ~16) */
   line-height:1.65;
@@ -158,9 +157,8 @@ section h3{
 }
 
 /* Force Raleway inside cards */
-.vision-grid,
 .vision-grid *{
-  font-family: Raleway, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: inherit;
 }
 
 .vision-grid{
@@ -323,6 +321,42 @@ section h3{
   background:var(--teal-500);
   color:#fff;
   box-shadow:var(--shadow);
+}
+
+/* =========================
+   About
+   ========================= */
+.about {
+  padding: 2.5rem 0 1.5rem 0;
+  background: #fff;
+}
+.about h2 {
+  margin-bottom: 1.1rem;
+}
+.about p {
+  font-size: 1.15rem;
+  color: var(--muted);
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Origins
+   ========================= */
+.origins {
+  padding: 2.5rem 0 1.5rem 0;
+  background: #fff;
+}
+.origins h2 {
+  margin-bottom: 1.1rem;
+}
+.origins p {
+  font-size: 1.15rem;
+  color: var(--muted);
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* =========================
